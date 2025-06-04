@@ -37,6 +37,7 @@ public class App {
 
         Persona pB = colaPersonas.findByName("Juan");
         System.out.println("Persona encintrada -> " +pB !=null);
+        Persona pE = colaPersonas.deleteByName
 
         //Tam = 4
         // 8 | 5 | -1 | 10
