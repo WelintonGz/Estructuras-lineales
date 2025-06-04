@@ -35,6 +35,9 @@ public class App {
         System.out.println("Personaatendida -> " + colaPersonas.remove());
         colaPersonas.printCola();
 
+        Persona pB = colaPersonas.findByName("Juan");
+        System.out.println("Persona encintrada -> " +pB !=null);
+
         //Tam = 4
         // 8 | 5 | -1 | 10
         //Tam = 3

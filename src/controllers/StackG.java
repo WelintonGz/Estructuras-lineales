@@ -20,20 +20,20 @@ public class StackG <T>{
         top = newNode;
     }
 
-    public int pop(){
+    public T pop(){
         if (isEmpty()){
             throw new EmptyStackException();
         }
-        int value = top.getValue();
+        T value = top.getValue();
         top = top.getNext();
         return value;
     }
 
-     public int peek(){
+     public T peek(){
         if (isEmpty()){
             throw new EmptyStackException();
         }
-        int value = top.getValue();
+        T value = top.getValue();
         return value;
     }
 
@@ -42,7 +42,7 @@ public class StackG <T>{
     }
 
     public void printStack(){
-        Node aux = top;
+        NodeGeneric<T> aux = top;
         while (aux != null) {
             System.out.print(aux.getValue() + " | ");
             aux = aux.getNext();
@@ -51,7 +51,7 @@ public class StackG <T>{
     }
 
     public int size(){
-        Node aux = top;
+        NodeGeneric<T> aux = top;
         int cont = 0;
         while (aux != null) {
             cont++;

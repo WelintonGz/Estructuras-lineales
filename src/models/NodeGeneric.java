@@ -3,7 +3,7 @@ package models;
 public class NodeGeneric <T>{
     private T value;
     private NodeGeneric<T> next;
-    public NodeGeneric(T value, NodeGeneric<T> next) {
+    public NodeGeneric(T value) {
         this.value = value;
         this.next = null;
     }
