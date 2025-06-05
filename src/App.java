@@ -1,4 +1,6 @@
 import controllers.Stack;
+import models.Persona;
+import controllers.QuequeG;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -36,8 +38,10 @@ public class App {
         colaPersonas.printCola();
 
         Persona pB = colaPersonas.findByName("Juan");
-        System.out.println("Persona encintrada -> " +pB !=null);
-        Persona pE = colaPersonas.deleteByName
+        System.out.println("Persona encintrada -> " +pB !=null? pB :  "ninguna");
+        Persona pE = colaPersonas.deleteByName("Pedro");
+        System.out.println("Persona encintrada -> " +pE !=null? pE :  "ninguna");
+        colaPersonas.printCola();
 
         //Tam = 4
         // 8 | 5 | -1 | 10
